@@ -7,7 +7,7 @@ from .data import data_generate
 from .header import header_generate
 
 proxies = {"http": None, "https": None}  # 代理
-debug = 0  # 调试模式
+debug = 1  # 调试模式
 '''
 this module is the main module. it will get cookies and post your report data
 if you are not developer,you must NOT write anything in this file
@@ -21,15 +21,11 @@ def service(username, password, datetime, report_type, data):
 
     # 创建浏览器对象
     try:
-        if debug == 0:
-            opt = webdriver.ChromeOptions()
-            opt.add_argument('headless')
-            opt.add_argument('no-sandbox')
-            opt.add_argument('disable-dev-shm-usage')
-            driver = webdriver.Chrome(options=opt)
-        else:
-            opt = webdriver.ChromeOptions()
-            driver = webdriver.Chrome(options=opt)
+        opt = webdriver.ChromeOptions()
+        opt.add_argument('headless')
+        opt.add_argument('no-sandbox')
+        opt.add_argument('disable-dev-shm-usage')
+        driver = webdriver.Chrome(options=opt)
     except:
         print("浏览器创建失败，请检查chromedriver配置")
         return 0
