@@ -1,12 +1,6 @@
-> **重要通知!! 返校后请修改home = 0 且确保学校地址和宿舍信息填写完整**
-> 学校地址范例，东风、禹州校区请参照更改
-```
-schoolgps: 河南省郑州市高新区郑州轻工大学大学科学校区
-schoollat: 33.75451
-schoollon: 113.30692
-```
+> **请合并最新代码以确保打卡信息正常**很抱歉昨日的错误commit导致了数据异常，最新的commit已经彻底修复了问题而且不需要其它操作
 
-<h1 align="center">🎉郑州轻工业大学nCov肺炎健康打卡脚本🎉</h1>
+<h1 align="center">🎉郑州轻工业大学nCov健康打卡脚本🎉</h1>
 <hr />
 <p align="center">🍺A script that can help you submit health information automatically🍺</p>
 <div align="center">
@@ -17,7 +11,16 @@ schoollon: 113.30692
 <div align="center"><a target="_blank" href="https://xwwwb.github.io/zzulidakadocs">官网&&文档页</a> 
 <a target="_blank" href="https://github.com/xwwwb/ZzuliDakaWeb">自动打卡网站仓库！</a></div>
 
-有问题请提issue，能修复请发pr
+<h2>⚠风险提示和免责声明</h2>
+
+此项目仅供学習用，您不应该将此脚本用于健康日报，下载后请于24小时内删除源代码。
+
+请勿用于实际使用，用于实际使用的一切后果由使用者承担，本脚本开发者不负任何责任。**打卡默认为您在的状态符合学校要求和防疫规定，若您身体不适/在中高风险、风控区，请手动打卡提交即时数据并及时向属地、辅导员及学校报告！**
+
+请遵守居住地和学校所在地的法律和郑州轻工业大学校规。遵守**郑州轻工业大学违纪处分管理规定之第二章第十九条之第六条规定**
+
+此项目使用[MPL-2.0 License](https://github.com/billionray/ZZULI-healthreport/blob/main/LICENSE)，当协议与本声明和居住地法律与校规冲突时，以后者为准！
+
 
 <h2>特征</h2>
 👏
@@ -43,20 +46,9 @@ schoollon: 113.30692
  
 特别感谢！ [skyiea314](https://github.com/skyiea314)
 
-<h2>⚠风险提示和免责声明</h2>
-
-此项目仅供学習用，下载后请于24小时内删除源代码和打卡历史记录。
-
-请勿用于实际使用，用于实际使用的一切后果由使用者承担。**打卡默认为您在的状态符合学校要求和防疫规定，若您身体不适/在中高风险、风控区，请手动打卡提交即时数据并及时向属地、辅导员及学校报告！**
-
-请遵守居住地和学校所在地的法律和郑州轻工业大学校规。遵守**郑州轻工业大学违纪处分管理规定之第二章第十九条之第六条规定**
-
-此项目使用[MPL-2.0 License](https://github.com/billionray/ZZULI-healthreport/blob/main/LICENSE)，当协议与居住地法律与校规冲突时，以后者为准
-
 <h2>更新路线：</h2>
 <ul>
-<li>-[]2022寒假 django网站/data.json生成</li>
-<li>-[]2022寒假 requests替换selenium</li>
+<li>✅2022-07-20 适配最新表单</li>
 <li>✅2022-01-02 适配寒假居家打卡和未打疫苗的数据</li>
 <li>✅2021-11-15 再次适配新的打卡数据</li>
 <li>✅2021-11-04 已适配本轮郑州疫情最新的打卡数据</li>
